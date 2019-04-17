@@ -25,7 +25,28 @@ public class ClienteDTO {
         this.nome = nome;
     }
 
+    public void setIdade(int idade) {
 
+        if(idade <= 18){
+            limiteCredito = 100;
+        }
+
+        if(idade > 18 && idade > 35){
+            limiteCredito = 300;
+        }
+
+        if(idade >= 35){
+            limiteCredito = 500;
+        }
+        this.idade = idade;
+    }
+
+    public void setPais(PaisDTO pais) {
+        if(pais.equals("Brasil")){
+            limiteCredito = 100;
+        }
+        this.pais = pais;
+    }
 
     public String getNome() {
         return nome;

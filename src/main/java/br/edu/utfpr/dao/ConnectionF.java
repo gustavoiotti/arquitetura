@@ -1,5 +1,5 @@
 //package br.edu.utfpr.dao;
-package br.edu.utfpr.dao.ConnectionF;
+package br.edu.utfpr.dao.Connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
